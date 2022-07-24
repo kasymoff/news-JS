@@ -1,5 +1,5 @@
 import './news.css';
-import { Article } from '../appView';
+import { Article } from '../../types/types';
 
 export type DrawNewsFunction = (data: Array<Article>) => void;
 

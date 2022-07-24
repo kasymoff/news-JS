@@ -1,4 +1,4 @@
-import { NewsSources } from '../view/appView';
+import { NewsSources } from '../types/types';
 
 type Endpoint = {
     endpoint: string;

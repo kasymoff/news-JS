@@ -1,43 +1,7 @@
 import News from './news/news';
 import Sources from './sources/sources';
-
-export type Article = {
-    author: string;
-    content: string;
-    description: string;
-    source: { id: string; name: string };
-    title: string;
-    url: string;
-    urlToImage: string;
-    publishedAt: string;
-};
-export type NewsData = {
-    status: string;
-    totalResults: number;
-    articles: Array<Article>;
-};
-
-export type Source = {
-    category: string;
-    country: string;
-    description: string;
-    id: string;
-    language: string;
-    name: string;
-    url: string;
-};
-
-export type NewsSources = {
-    status: string;
-    sources: Array<Source>;
-};
-
-export interface drawNewsFunction {
-    (data?: NewsData): void;
-}
-export interface drawSourcesFunction {
-    (data?: NewsSources): void;
-}
+import { Article, Source } from '../types/types';
+import { drawNewsFunction, drawSourcesFunction } from '../interfaces/interfaces';
 
 export class AppView {
     news: News;

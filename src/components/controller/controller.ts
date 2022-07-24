@@ -1,5 +1,5 @@
 import AppLoader from './appLoader';
-import { drawSourcesFunction, drawNewsFunction } from '../view/appView';
+import { drawSourcesFunction, drawNewsFunction } from '../interfaces/interfaces';
 
 class AppController extends AppLoader {
     getSources(callback: drawSourcesFunction): void {

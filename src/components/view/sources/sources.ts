@@ -1,7 +1,5 @@
 import './sources.css';
-import { Source } from '../appView';
-
-export type DrawSourcesFunction = (data: Array<Source>) => void;
+import { DrawSourcesFunction } from '../../types/types';
 class Sources {
     draw: DrawSourcesFunction = (data) => {
         const fragment = document.createDocumentFragment();
