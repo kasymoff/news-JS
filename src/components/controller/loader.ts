@@ -1,11 +1,4 @@
-import { NewsSources } from '../types/types';
-
-type Endpoint = {
-    endpoint: string;
-    options?: object;
-};
-
-type CallbackLoader = (() => void) | ((data: NewsSources) => void);
+import { Endpoint, CallbackLoader } from '../types/types';
 class Loader {
     private baseLink: string;
     private options: object;

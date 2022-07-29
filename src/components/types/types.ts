@@ -30,5 +30,11 @@ export type NewsSources = {
     sources: Array<Source>;
 };
 
+export type Endpoint = {
+    endpoint: string;
+    options?: object;
+};
+
+export type CallbackLoader = (() => void) | ((data: NewsSources) => void);
 export type DrawNewsFunction = (data: Array<Article>) => void;
 export type DrawSourcesFunction = (data: Array<Source>) => void;
